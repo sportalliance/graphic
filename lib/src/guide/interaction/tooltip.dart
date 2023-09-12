@@ -1,7 +1,7 @@
 import 'package:graphic/src/util/collection.dart';
 import 'package:flutter/painting.dart';
 import 'package:graphic/src/chart/chart.dart';
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/label.dart';
 import 'package:graphic/src/common/intrinsic_layers.dart';
 import 'package:graphic/src/common/operators/render.dart';
@@ -192,7 +192,7 @@ class TooltipRenderOp extends Render<TooltipScene> {
   TooltipRenderOp(
     Map<String, dynamic> params,
     TooltipScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override

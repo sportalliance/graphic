@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/dim.dart';
 import 'package:graphic/src/common/intrinsic_layers.dart';
 import 'package:graphic/src/common/styles.dart';
@@ -64,7 +64,7 @@ class LineAnnotRenderOp extends AnnotRenderOp<LineAnnotScene> {
   LineAnnotRenderOp(
     Map<String, dynamic> params,
     LineAnnotScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override

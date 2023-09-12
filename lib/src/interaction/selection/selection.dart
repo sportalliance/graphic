@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/painting.dart';
 import 'package:graphic/src/aes/aes.dart';
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/dim.dart';
 import 'package:graphic/src/common/label.dart';
 import 'package:graphic/src/common/intrinsic_layers.dart';
@@ -272,7 +272,7 @@ class SelectorRenderOp extends Render<SelectorScene> {
   SelectorRenderOp(
     Map<String, dynamic> params,
     SelectorScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override

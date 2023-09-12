@@ -1,4 +1,4 @@
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/dataflow/operator.dart';
 import 'package:graphic/src/graffiti/figure.dart';
 import 'package:graphic/src/graffiti/scene.dart';
@@ -19,8 +19,8 @@ abstract class Render<S extends Scene> extends Operator {
 
   /// The view.
   ///
-  /// It is imported to mark [View.dirty].
-  final View view;
+  /// It is imported to mark [GraphicView.dirty].
+  final GraphicView view;
 
   @override
   evaluate() {

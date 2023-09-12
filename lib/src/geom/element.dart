@@ -11,7 +11,7 @@ import 'package:graphic/src/aes/label.dart';
 import 'package:graphic/src/algebra/varset.dart';
 import 'package:graphic/src/aes/shape.dart';
 import 'package:graphic/src/aes/size.dart';
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/intrinsic_layers.dart';
 import 'package:graphic/src/common/operators/render.dart';
 import 'package:graphic/src/coord/coord.dart';
@@ -219,7 +219,7 @@ class ElementRenderOp extends Render<ElementScene> {
   ElementRenderOp(
     Map<String, dynamic> params,
     ElementScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override

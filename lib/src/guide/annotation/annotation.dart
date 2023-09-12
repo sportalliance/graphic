@@ -1,4 +1,4 @@
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/operators/render.dart';
 import 'package:graphic/src/graffiti/scene.dart';
 
@@ -28,6 +28,6 @@ abstract class AnnotRenderOp<S extends AnnotScene> extends Render<S> {
   AnnotRenderOp(
     Map<String, dynamic> params,
     S scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 }

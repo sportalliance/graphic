@@ -2,7 +2,7 @@ import 'package:flutter/painting.dart';
 import 'package:graphic/src/common/dim.dart';
 import 'package:graphic/src/util/assert.dart';
 import 'package:graphic/src/util/collection.dart';
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/intrinsic_layers.dart';
 import 'package:graphic/src/coord/coord.dart';
 import 'package:graphic/src/coord/polar.dart';
@@ -77,7 +77,7 @@ class RegionAnnotRenderOp extends AnnotRenderOp<RegionAnnotScene> {
   RegionAnnotRenderOp(
     Map<String, dynamic> params,
     RegionAnnotScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override

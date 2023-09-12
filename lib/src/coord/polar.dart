@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/dim.dart';
 import 'package:graphic/src/graffiti/figure.dart';
 import 'package:graphic/src/shape/util/gradient.dart';
@@ -282,7 +282,7 @@ class PolarRegionColorRenderOp extends RegionBackgroundRenderOp {
   PolarRegionColorRenderOp(
     Map<String, dynamic> params,
     RegionBackgroundScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override
@@ -308,7 +308,7 @@ class PolarRegionGradientRenderOp extends RegionBackgroundRenderOp {
   PolarRegionGradientRenderOp(
     Map<String, dynamic> params,
     RegionBackgroundScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 
   @override

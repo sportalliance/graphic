@@ -13,7 +13,7 @@ import 'package:graphic/src/aes/size.dart';
 import 'package:graphic/src/algebra/varset.dart';
 import 'package:graphic/src/chart/chart.dart';
 import 'package:graphic/src/chart/size.dart';
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/defaults.dart';
 import 'package:graphic/src/common/dim.dart';
 import 'package:graphic/src/common/label.dart';
@@ -63,7 +63,7 @@ EdgeInsets _defaultPolarPadding(Size _) => const EdgeInsets.all(10);
 /// Parses the specification for a view.
 void parse<D>(
   Chart<D> spec,
-  View<D> view,
+  GraphicView<D> view,
   Size chartSize,
 ) {
   // Signal

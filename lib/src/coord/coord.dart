@@ -1,5 +1,5 @@
 import 'package:flutter/painting.dart';
-import 'package:graphic/src/chart/view.dart';
+import 'package:graphic/src/chart/graphic_view.dart';
 import 'package:graphic/src/common/converter.dart';
 import 'package:graphic/src/common/dim.dart';
 import 'package:graphic/src/common/intrinsic_layers.dart';
@@ -144,6 +144,6 @@ abstract class RegionBackgroundRenderOp extends Render<RegionBackgroundScene> {
   RegionBackgroundRenderOp(
     Map<String, dynamic> params,
     RegionBackgroundScene scene,
-    View view,
+    GraphicView view,
   ) : super(params, scene, view);
 }

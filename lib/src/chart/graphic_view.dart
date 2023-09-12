@@ -12,8 +12,8 @@ import 'chart.dart';
 import 'size.dart';
 
 /// The dataflow graph of a chart.
-class View<D> extends Dataflow {
-  View(
+class GraphicView<D> extends Dataflow {
+  GraphicView(
     Chart<D> spec,
     Size size,
     this.repaint,
@@ -40,17 +40,17 @@ class View<D> extends Dataflow {
 
   /// The gesture signal channel.
   ///
-  /// This is generated in [parse] and hold by [View] for internal interactions.
+  /// This is generated in [parse] and hold by [GraphicView] for internal interactions.
   late StreamController<GestureSignal> gestureChannel;
 
   /// The resize signal channel.
   ///
-  /// This is generated in [parse] and hold by [View] for internal interactions.
+  /// This is generated in [parse] and hold by [GraphicView] for internal interactions.
   late StreamController<ResizeSignal> resizeChannel;
 
   /// The changeData signal channel.
   ///
-  /// This is generated in [parse] and hold by [View] for internal interactions.
+  /// This is generated in [parse] and hold by [GraphicView] for internal interactions.
   late StreamController<ChangeDataSignal<D>> changeDataChannel;
 
   /// Emits a gesture signal.
